@@ -9,6 +9,9 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-family: KakaoBig, "Noto Sans KR", -apple-system, BlinkMacSystemFont, nanumbarungothic, nanumgothic, "malgun gothic", dotum, sans-serif;
+
 }
 .blind{
 
@@ -20,4 +23,14 @@ body {
     overflow: hidden;
     clip: rect(0 0 0 0);
     margin: -1px;
+}
+
+
+
+
+//sub movement
+.move-inner{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 5%;
 }

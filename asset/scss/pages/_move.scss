@@ -2,47 +2,70 @@
     padding-top: 100px;
 }
 //sc-visual
-.sc-visual{
+.sc-informain {
+    overflow: hidden;
 
-    position: relative;
-    .video-box{
-        // height: 100vh;
-        .video{
-            width: 100%;
-            height: 100vh;
-            min-height: 100%;
-            margin-top: -100px;
-            object-fit: cover;
-            vertical-align: middle;
+    .visual-box {
+        position: relative;
+        margin-top: 100px;
+    }
+    .left-blind {
+        position: absolute;
+        background: rgb(255, 255, 255);
+        top: -100px;
+        left: -282px;
+        width: 50%;
+        bottom: 0;
+        // animation-duration: 3s;
+        // animation-name: leftblindin;
+    }
+    .right-blind {
+        position: absolute;
+        background: rgb(255, 255, 255);
+        top: -100px;
+        right: -282px;
+        width: 50%;
+        bottom: 0;
+        // animation-duration: 3s;
+        // animation-name: rightblindin;
+    }
+    .video-box {
+        min-height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+        margin-top: -100px;
+
+        video {
+            height: 100%;
         }
     }
 
-    .txt-box{
+    .txt-box {
         position: absolute;
-        text-align: center;
-        margin-top: -87px;
-        left: 50%;
         top: 50%;
-        transform: translate3d(-50%, -50%, 0px);
-        .sub-title{
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        margin-top: -40px;
+        // opacity: 0;
+        // animation-duration: 1s;
+        // animation-name: txtrise;
+        // animation-delay: 3s;
+
+        .cata {
             font-size: 22px;
             font-weight: 400;
             line-height: 34px;
             color: rgb(255, 255, 255);
-            font-style: normal;
-            // transform: translate3d(0px, 20px, 0px);
-            // opacity: 0;
+            display: block;  
         }
-        .sc-title{
-            // transform: translate3d(0px, 20px, 0px);
+        .m-title {
             padding-top: 12px;
             font-size: 100px;
             font-weight: 700;
             line-height: 110px;
             color: rgb(255, 205, 0);
-            // opacity: 0;
-            // white-space: pre-wrap;
-
+            white-space: pre-wrap;
         }
     }
 }
@@ -154,6 +177,8 @@
 
     }
     .img-box{
+        position: relative;
+        overflow: hidden;
         // display: table-cell;
         // vertical-align: middle;
         // position: static;
@@ -240,6 +265,14 @@
             }
         }
     }
+}
+
+
+.cover {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+    background-color: #fff;
 }
 
 //sc-report
@@ -334,9 +367,13 @@
 
 
     .txt-box{
+        display: none;
         // width: 66.7%;
         // margin: 0 auto;
         // color: #fff;
+        &.active{
+            display: block;
+        }
     }
     // position: static;
     .title{
@@ -466,6 +503,7 @@
 
 //sc-edu
 .sc-contents{
+    padding-bottom: 200px;
     .sc-title{
         text-align: center;
         font-size: 40px;
@@ -541,6 +579,6 @@
 }
 
 //sc-insurance
-.sc-insurance{
-
+.insurance{
+    // padding-bottom: 200px;
 }

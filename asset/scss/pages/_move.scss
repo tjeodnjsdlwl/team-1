@@ -167,6 +167,9 @@
             //     // direction: ltr;
             // }
         }
+        &.reverse{
+            flex-direction: row-reverse;
+        }
         &.parking{
             // direction: rtl;
             flex-direction: row-reverse;
@@ -581,4 +584,59 @@
 //sc-insurance
 .insurance{
     // padding-bottom: 200px;
+}
+
+
+
+
+
+//서브페이지 business
+.sc-business{
+    padding-top: 200px;
+    .business-bg{
+        width: 100%;
+        height: 610px;
+        // background-image: url(../images/bg/business-bg.jpg) ;
+        background: url(../images/bg/business-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .title-box{
+        display: flex;
+        font-weight: 700;
+        padding-top: 50px;
+    }
+    .sc-title{
+        flex: 1;
+        display: inline-block;
+        font-size: 30px;
+        // font-weight: 700;
+        line-height: 46px;
+        // padding-left: 0px;
+        padding-left: 150px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        // white-space: pre-wrap;
+    }
+    .desc{
+        width: calc(100% / 2);
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        font-size: 22px;
+        // font-weight: 700;
+        line-height: 34px;
+    }
+}
+
+
+//business-area
+.business-area{
+    padding-top: 200px;
+    .img-box{
+        width: calc((100% - 12px)/2);
+        padding:0 6px;
+    }
+    .txt-inner{
+        width: calc((100% - 12px)/2);
+        padding:0 6px;
+    }
 }

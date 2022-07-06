@@ -879,6 +879,7 @@ footer .copyright .address {
   font-size: 30px;
   font-weight: 800;
   line-height: 46px;
+  white-space: pre-line;
 }
 .sc-kakaoT .mainTitle-box p {
   flex: 1;
@@ -966,10 +967,20 @@ footer .copyright .address {
 .sc-kakaoT .yellow-box .title-box {
   padding: 0;
 }
+.sc-kakaoT .yellow-box .title-box h3 {
+  word-break: normal;
+  overflow-wrap: normal;
+}
 .sc-kakaoT .yellow-inner {
   display: flex;
   align-items: center;
   padding: 0 5%;
+}
+.sc-kakaoT .yellow-inner.reverse .img-box {
+  flex-flow: row;
+}
+.sc-kakaoT .yellow-inner.reverse .img-box img {
+  padding-left: 16.66%;
 }
 .sc-kakaoT.active {
   display: block;

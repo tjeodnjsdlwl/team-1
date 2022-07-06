@@ -158,6 +158,7 @@
             font-size: 30px;
             font-weight: 800;
             line-height: 46px;
+            white-space: pre-line;
         }
         p {
             flex: 1;
@@ -242,12 +243,22 @@
         }
         .title-box {
             padding: 0;
+            h3 {
+                word-break: normal;
+                overflow-wrap: normal;
+            }
         }
     }
     .yellow-inner {
         display: flex;
         align-items: center;
         padding: 0 5%;
+        &.reverse .img-box {
+            flex-flow: row;
+            img {
+                padding-left: 16.66%;
+            }
+        } 
     }
     &.active {
         display: block;

@@ -22,7 +22,7 @@ header {
         // padding-top: 33px;
     }
     .logo {
-        width: 164px; 
+        width: 163px; 
         height: 27px;
         margin-right: 4vw;
         background-image: url(../images/logo.svg);
@@ -133,7 +133,9 @@ header {
 
         .logo {
             transform: scale(0.64);
-            margin-top: 16px;
+            margin-top: 12px;
+            margin-right: 6vw;
+            margin-left: -2vw;
         }
         .covid {
             margin-top: 12px;

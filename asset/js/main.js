@@ -76,7 +76,7 @@ $(function(){
 
 
 
-    // 텍스트 위에서 아래로
+    // 텍스트 아래서 위로
     textUp = gsap.utils.toArray('.motion');
     textUp.forEach((textUp) => {
         gsap.from(textUp, 1.2, {
@@ -119,6 +119,15 @@ $(function(){
     }) // 이미지,비디오 옆으로 슬라이드
 
 
+
+    gsap.from('.sc-Appintro .img-box',{
+        opacity:0,
+        scale: 0,
+        duration:1,
+        scrollTrigger:{
+            trigger:'.sc-Appintro .img-box',
+        }
+    })
 
     // $('.motion').each(function(index,item){
     
@@ -164,4 +173,21 @@ $(function(){
     });
 
     
+
+
+
+
+
+
+
+
+
+    //서브페이지navi
+    $('.intro-area .btn').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+
+        let idx = $(this).index();
+        $('.intro-area .intro-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+
+    });
 });//end

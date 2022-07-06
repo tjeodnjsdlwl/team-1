@@ -15,14 +15,14 @@ header {
         background-color: #fff;
     }
 
-    .move-inner {
+    .common-inner {
         display: flex;
         position: relative;
         z-index: 1;
         // padding-top: 33px;
     }
     .logo {
-        width: 164px; 
+        width: 163px; 
         height: 27px;
         margin-right: 4vw;
         background-image: url(../images/logo/logo.svg);
@@ -108,6 +108,24 @@ header {
         }
     }
 
+    &.over {
+        
+        .header-bg {
+            height: 294px;
+        }
+
+        .gnb-menu {
+
+            .subMenu-list {
+                // transition-delay: .25s;
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+        
+    }
+}
+.header-area {
     &.fixed {
         position: fixed;
         height: 55px;
@@ -115,7 +133,9 @@ header {
 
         .logo {
             transform: scale(0.64);
-            margin-top: 16px;
+            margin-top: 12px;
+            margin-right: 6vw;
+            margin-left: -2vw;
         }
         .covid {
             margin-top: 12px;
@@ -153,27 +173,10 @@ header {
             .gnb-menu {
 
                 .subMenu-list {
-                    transition-delay: .25s;
+                    transition-delay: .15s;
                 }
             }
         }
 
-    }
-
-    &.over {
-        
-        .header-bg {
-            height: 294px;
-        }
-
-        .gnb-menu {
-
-            .subMenu-list {
-                // transition-delay: .25s;
-                opacity: 1;
-                pointer-events: all;
-            }
-        }
-        
     }
 }

@@ -39,14 +39,28 @@
             height: 100%;
         }
     }
-
-    .txt-box {
+    //서브 비디오메인
+    .title-wrap{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
-        margin-top: -40px;
+        margin-top: -76px;
+        .img-box{
+            img{
+                width: 129px;
+                object-fit: cover;
+            }
+        }
+    }
+    .txt-box {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        // text-align: center;
+        // margin-top: -40px;
         // opacity: 0;
         // animation-duration: 1s;
         // animation-name: txtrise;
@@ -646,7 +660,7 @@
 
 
 //business-area
-.business-area{
+.contents-area{
     padding-top: 200px;
     .img-box{
         width: calc((100% - 12px)/2);

@@ -423,13 +423,18 @@ footer .copyright .address {
 .sc-informain .video-box video {
   height: 100%;
 }
-.sc-informain .txt-box {
+.sc-informain .title-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -40px;
+  margin-top: -76px;
+}
+.sc-informain .title-wrap .img-box img {
+  width: 129px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sc-informain .txt-box .cata {
   font-size: 22px;
@@ -906,14 +911,14 @@ footer .copyright .address {
   line-height: 34px;
 }
 
-.business-area {
+.contents-area {
   padding-top: 200px;
 }
-.business-area .img-box {
+.contents-area .img-box {
   width: calc((100% - 12px) / 2);
   padding: 0 6px;
 }
-.business-area .txt-inner {
+.contents-area .txt-inner {
   width: calc((100% - 12px) / 2);
   padding: 0 6px;
 }

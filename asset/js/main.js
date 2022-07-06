@@ -1,28 +1,3 @@
-// $(function(){
-//     $('header .gnb-list').hover(function(){
-//         $('header').addClass('over');
-//     }, function(){
-//         $('header').removeClass('over');
-//     })
-
-//     $("header .gnb-item:first-child > a").focusin(function(){
-//         $('header').addClass('over');
-//    });
-//    $("header .gnb-item:nth-last-child(2) .subMenu-item:last-child a").focusout(function(){
-//         $('header').removeClass('over');
-//    });
-
-//     $(window).scroll(function(){
-//         var curr = $(this).scrollTop();
-
-//         if (curr >= 100) {
-//             $('header').addClass('fixed');
-//         } else {
-//             $('header').removeClass('fixed');
-//         }
-//     });
-
-// })
 
 $(function(){
     $('header .gnb-item').hover(function(){
@@ -48,31 +23,63 @@ $(function(){
         }
     });
 
+    // tl = gsap.timeline({})
+
+    // .addLabel('label')
+    // .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
+    // .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
+
+    // .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 1.2,})
+    // .from ('.sc-informain .img-box',{y: -50,},'label')
+    // .from ('.sc-informain .title-wrap .txt-box',{y: 50,duration: 0.8, opacity:0,},'label')
+    // // .from ('.sc-informain .txt-box',{y: 20,duration: 0.8,opacity:0});
+
+    //     tl = gsap.timeline({})
+
+    // .addLabel('label')
+    // .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
+    // .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
+
+    // .addLabel('m1')
+    // .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 1.2,})
+    // .from ('.sc-informain .img-box',{y: -50,duration: 1.2,},'m1')
+    // .from ('.sc-informain .title-wrap .txt-box',{y: 50,duration: 1.2, opacity:0,},'m1')
+    
+    // tl = gsap.timeline({})
+
+    // .addLabel('label')
+    // .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
+    // .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
+
+    // .addLabel('m1')
+    // .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 1.2,})
+    // .from ('.sc-informain .img-box',{y: -50,duration: 1.2,})
+    // .from ('.sc-informain .title-wrap .txt-box',{y: 50,duration: 1.2, opacity:0,})
+
+    // tl = gsap.timeline({})
+
+    // .addLabel('label')
+    // .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
+    // .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
+
+    // .addLabel('m1')
+    // .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 1.2,})
+    // .from ('.sc-informain .img-box',{y: -50,duration: 1.2,},"+=1")
+    // .from ('.sc-informain .title-wrap .txt-box',{y: 50,duration: 1.2, opacity:0,},"-=1")
+
     tl = gsap.timeline({})
 
     .addLabel('label')
     .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
     .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
-    .from ('header .txt-box',{y: 20,duration: 0.8,opacity:0})
+    .from ('.sc-informain .txt-box2',{y: 60, duration: 1.2, opacity:0,})
 
+    .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 0.8,},"-=1")
 
+    .addLabel('m1')
+    .from ('.sc-informain .title-wrap .txt-box',{y: 60,duration: 0.8, opacity:0,},'m1')
+    .to ('.sc-informain .img-box',{y: 30,duration: 0.8},'m1')
 
-
-    // gsap.from('.intro-title-area',{
-    //     scrollTrigger:{
-    //         trigger:'.intro-title-area',
-    //         start:"0% 100%", // ['트리거','윈도우']
-    //         // end:"100% top", // ['트리거','윈도우']
-    //         end:"0% 100%",
-    //         markers:true,
-    //         // scrub:1,//왔다 갔다 할때 반복도 됨 내 스크롤에 따라서 0은 내 스크롤 기준 보통은 1 높을수록 좀만 스크롤이 닿아도 많이 실행됨
-    //         // pin:true,
-    //     },
-    //     'yPercent':30,
-    //     // duration: 5,
-    //     opacity:0,
-    //     duration: 1,
-    // });
 
 
 

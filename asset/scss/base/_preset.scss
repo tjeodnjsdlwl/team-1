@@ -2,7 +2,6 @@
 
 // 바디여기서 세팅하세요
 body {
-    // min-width: ?세팅하시고
     font-family: KakaoBig, "Noto Sans KR", -apple-system, BlinkMacSystemFont, nanumbarungothic, nanumgothic, "malgun gothic", dotum, sans-serif;
     line-height: 1;
     font-size: 16px;
@@ -26,6 +25,9 @@ body {
     margin: 0px auto;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
 
 .btn-more {
     display: inline-block;

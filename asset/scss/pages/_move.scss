@@ -1097,6 +1097,21 @@
     display: none;
     &.active{
         display: block;
+        .navi01-bg,
+        .navi02-bg{
+            animation: fadeInUp 1s;
+            
+        }
+    }
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 40px, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0);
+        }
     }
     .navi02{
         padding-top: 80px;

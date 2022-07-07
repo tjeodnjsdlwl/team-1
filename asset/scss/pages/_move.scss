@@ -1113,14 +1113,15 @@
         display: block;
         .navi01-bg,
         .navi02-bg{
-            animation: fadeInUp 1s;
+            animation: fadeInUp 1.3s;
+            transition: ease-in-out;
             
         }
     }
     @keyframes fadeInUp {
         0% {
             opacity: 0;
-            transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 80px, 0);
         }
         to {
             opacity: 1;
@@ -1152,4 +1153,23 @@
             }
         }
     }
+}
+
+
+
+
+
+@media screen and (max-width: 1408px) {
+    /* 1023까지잡혀야함 */
+
+}
+@media screen and (max-width: 1023px) {
+  /* 767까지잡혀야함 */
+  /* 테블릿 */
+
+}
+@media screen and (max-width: 767px) { 
+  /* 320까지잡혀야함 */
+  /* 모바일 ~ 더나와도됨 480 등등 필요하면 더 가능 */
+
 }

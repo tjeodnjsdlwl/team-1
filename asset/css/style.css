@@ -437,6 +437,27 @@ footer .copyright .address {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.sc-informain .txt-box2 {
+  opacity: 1;
+}
+.sc-informain .txt-box2 .cata {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+.sc-informain .txt-box2 .m-title {
+  padding-top: 12px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 110px;
+  color: rgb(255, 205, 0);
+  white-space: pre-wrap;
+}
+.sc-informain .txt-box {
+  opacity: 1;
+}
 .sc-informain .txt-box .cata {
   font-size: 22px;
   font-weight: 400;

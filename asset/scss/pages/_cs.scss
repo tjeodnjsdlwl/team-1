@@ -172,7 +172,9 @@
 }
 // common
 section {
-    text-align: center;
+    &.center {
+        text-align: center;
+    }
 
     .row {
         display: table-row;

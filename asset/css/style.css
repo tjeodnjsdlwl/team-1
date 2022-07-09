@@ -543,7 +543,7 @@ footer .copyright .address { float: right; font-style: normal; }
 
 .sc-custalk .ig-notice .view-box .text-box .content { margin-top: 24px; font-size: 16px; font-weight: 400; line-height: 30px; color: #666666; }
 
-section { text-align: center; }
+section.center { text-align: center; }
 
 section .row { display: table-row; }
 

@@ -1,0 +1,26 @@
+// common의 용도
+
+// 바디여기서 세팅하세요
+body {
+    line-height: normal;
+    font-size: 14px;
+    color:inherit;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: KakaoBig, "Noto Sans KR", -apple-system, BlinkMacSystemFont, nanumbarungothic, nanumgothic, "malgun gothic", dotum, sans-serif;
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+.common-inner {
+    max-width: 1920px;
+    // min-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 5%;
+}

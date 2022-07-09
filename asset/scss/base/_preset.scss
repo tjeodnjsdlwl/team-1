@@ -9,9 +9,6 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    font-family: KakaoBig, "Noto Sans KR", -apple-system, BlinkMacSystemFont, nanumbarungothic, nanumgothic, "malgun gothic", dotum, sans-serif;
-
 }
 .blind{
     position: absolute;
@@ -28,6 +25,14 @@ body {
     margin: 0px auto;
 }
 
+.loading-sub {
+    position: fixed;
+    width: 100vw; height: 100vh;
+    background-color: rgb(32, 34, 55);
+    opacity: 1;
+    z-index: 100;
+    pointer-events: none;
+}
 .reverse {
     flex-direction: row-reverse;
 }

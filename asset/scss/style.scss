@@ -5,6 +5,7 @@
 //base
 @import './base/reset';
 @import './base/preset';
+@import './base/typography';
 
 //layout
 @import './layout/header';
@@ -15,4 +16,7 @@
 
 //pages
 @import './pages/home';
+@import './pages/service';
+@import './pages/cs';
 @import './pages/move';
+@import './pages/mobil';

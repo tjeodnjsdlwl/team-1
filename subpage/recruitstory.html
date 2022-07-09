@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오모빌리티</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+    <script defer src="../asset/js/jquery-1.12.4.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script defer src="../asset/js/common.js"></script>
+    <script defer src="../asset/js/recruit.js"></script>
+    
+</head>
+<body>
+    <header class="header-area">
+        <div class="common-inner">
+            <h1 class="logo"><a href="../main.html"><span class="blind">카카오모빌리티</span></a></h1>
+            <div class="gnb-menu">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="">카카오모빌리티</a>
+                        <ul class="subMenu-list">
+                            <li class="subMenu-item"><a href="./kakaostory.html">카카오모빌리티 이야기</a></li>
+                            <li class="subMenu-item"><a href="./recruitstory.html">영입 이야기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="">기술과 안전</a>
+                        <ul class="subMenu-list">
+                            <li class="subMenu-item"><a href="./movement.html">이동 기술 이야기</a></li>
+                            <li class="subMenu-item"><a href="./safety.html">안전 노력 이야기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="">서비스</a>
+                        <ul class="subMenu-list">
+                            <li class="subMenu-item"><a href="./kakaoT.html">카카오 T</a></li>
+                            <li class="subMenu-item"><a href="./business.htm">카카오 T 비즈니스</a></li>
+                            <li class="subMenu-item"><a href="./navi.html">카카오내비</a></li>
+                            <li class="subMenu-item"><a href="./auto.html">카카오모빌리티 자율주행</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="">안내</a>
+                        <ul class="subMenu-list">
+                            <li class="subMenu-item"><a href="./cssupport.html">고객 지원</a></li>
+                            <li class="subMenu-item"><a href="">카카오모빌리티 리포트</a></li>
+                            <li class="subMenu-item"><a href="">NEXT MOBILITY: NEMO</a></li>
+                        </ul>
+                    </li>
+                    <li class="covid"><a href="">COVID-19 대응</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bg"></div>
+    </header>
+    <main class="container">
+        <section class="sc-informain center">
+            <h2 class="blind">메인동영상</h2>
+            <div class="visual-box">
+                <div class="left-blind"></div>
+                <div class="right-blind"></div>
+                <div class="video-box">
+                    <video src="../asset/video/recruitstory.mp4" autoplay muted loop>
+                        <source type="video/mp4">
+                    </video>
+                </div>
+                <div class="txt-box">
+                    <span class="cata">영입이야기</span>
+                    <h3 class="m-title">recruit</h3>
+                </div>
+            </div>
+        </section>
+        <section class="sc-recruitinfor center boat">
+            <div class="common-inner">
+                <h2 class="s-title">이동의 혁신을 함께 이뤄갈 <br>카카오모빌리티 크루 이야기</h2>
+                <p class="desc">카카오모빌리티 크루와 함께 이동의 혁신을 이루고, <br>일상의 여유와 가치를 만드는 <br>‘스마트모빌리티’를 만들어갑니다.</p>
+                <a href="" class="link-site">영입사이트 바로가기</a>
+            </div>
+        </section>
+        <section class="sc-recruit center">
+            <div class="common-inner">
+                <div class="row">
+                    <div class="left-box">
+                        <div class="ig-box active tab1"><img src="../asset/images/tech-tab1.jpg" alt="기술"><div class="cover"></div></div>
+                        <div class="ig-box tab2"><img src="../asset/images/design-tab2.jpg" alt="디자인"><div class="cover"></div></div>
+                        <div class="ig-box tab3"><img src="../asset/images/work-tab3.jpg" alt="사업"><div class="cover"></div></div>
+                        <div class="ig-box tab4"><img src="../asset/images/service-tab4.jpg" alt="서비스"></div>
+                        <div class="ig-box tab5"><img src="../asset/images/staff-tab5.jpg" alt="스탭"><div class="cover"></div></div>
+                    </div>
+                    <div class="right-box boat">
+                        <h2 class="s-title">카카오모빌리티 영입분야</h2>
+                        <p class="text">카카오모빌리티의 영입분야를 소개합니다. <br>영입공고 보러가기 버튼을 클릭해서 현재 진행 중인 영입공고를 확인해보세요.</p>
+                        <ul class="tab-list">
+                            <li class="tab-item active" ><a href="" id="tab1">기술</a></li>
+                            <li class="tab-item"><a href="" id="tab2">디자인</a></li>
+                            <li class="tab-item"><a href="" id="tab3">사업기획</a></li>
+                            <li class="tab-item"><a href="" id="tab4">서비스 기획</a></li>
+                            <li class="tab-item"><a href="" id="tab5">스탭</a></li>
+                        </ul>
+                        <div class="text-box">
+                            <p class="text gray active tab1" >카카오모빌리티의 서비스 전반을 책임지는 클라이언트 개발<br>(Android,iOS)과 서버개발, 서비스 운영 및 데이터 분석까지 기술<br>관련 전문가들을 모집하고 있습니다.</p>
+                            <p class="text gray tab2" >카카오모빌리티 브랜드 디자인(BX) 및 모빌리티 앱 서비스와 관련한 <br>UI / UX 디자인을 함께 설계할 디자이너를 모집하고 있습니다.</p>
+                            <p class="text gray tab3" >카카오모빌리티의 사업 전반을 기획하고, 데이터 분석을 통한 마케팅 <br>전략을 수립할 수 있는 모빌리티의 새로운 트렌드를 함께 기획할 사업 <br>기획자를 모집하고 있습니다.</p>
+                            <p class="text gray tab4" >카카오모빌리티의 기존 앱 서비스 기획과 신규 서비스 기획 및 데이터 <br>분석을 통해 사용자 관점에서 생각할 수 있는 서비스 기획자를 모집<br>하고 있습니다.</p>
+                            <p class="text gray tab5" >카카오모빌리티의 전반적인 경영지원 업무, <br>자금관리 및 회계 관리 제도 등을 운영할 수 있는 스탭을 모집하고 <br>있습니다.</p>
+                        </div>
+                        <a href="" class="link-site">영입공고 보러가기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-culture center">
+            <div class="ig-box boat"><img src="../asset/images/recruit-culture.jpg" alt="카카오모빌리티 기업문화 살펴보기"></div>
+            <div class="common-inner">
+                <div class="row">
+                    <h2 class="s-title boat">카카오모빌리티 <br>기업문화 살펴보기</h2>
+                    <div class="right-box left-flow">
+                        <p class="desc">카카오모빌리티의 기업문화가 궁금하신가요? <br>블로그를 통해 카카오모빌리티 크루들의 일상을 확인해보세요.</p>
+                        <a href="" class="link-site">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-area">
+        <div class="common-inner">
+            <div class="ftop-wrap">
+                <div class="row">
+                    <h3 class="f-title">
+                        <span>we</span>
+                        <span>move</span>
+                        <span>life</span>
+                    </h3>
+                    <div class="footer-item">
+                        <div class="cata">카카오모빌리티</div>
+                        <div><a href="">카카오모빌리티 이야기</a></div>
+                        <div><a href="">영입 이야기</a></div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="cata">기술과 안전</div>
+                        <div><a href="">이동 기술 이야기</a></div>
+                        <div><a href="">안전 노력 이야기</a></div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="cata">서비스</div>
+                        <div><a href="">카카오 T</a></div>
+                        <div><a href="">카카오 T 비즈니스</a></div>
+                        <div><a href="">카카오내비</a></div>
+                        <div><a href="">카카오모빌리티 자율주행</a></div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="cata">안내</div>
+                        <div><a href="">고객 지원</a></div>
+                        <div><a href="">카카오모빌리티 리포트</a></div>
+                        <a href="">NEXT MOBILITY: NEMO</a>
+                    </div>
+                    <div class="footer-item">
+                        <div class="cata">Follow us</div>
+                        <div><a href="">brunch</a></div>
+                        <div><a href="">Facebook</a></div>
+                        <div><a href="">YouTube</a></div>
+                        <div><a href="">Kakao TV</a></div>
+                        <div><a href="">instagram</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row">
+                    <div class="box">
+                        <div class="corp">© Kakao Mobility Corp.</div>
+                        <div class="a-wrap">
+                            <a href="" class="link-site bold">위치정보 이용약관</a>
+                            <a href="" class="link-site bold">개인(위치)정보처리방침</a>
+                            <a href="" class="link-site">이용약관</a>
+                            <a href="" class="link-site">선불충전금현황</a>
+                            <a href="" class="link-site">광고안내</a>
+                            <a href="" class="link-site">윤리경영</a>
+                        </div>
+                        <address class="address">경기도 성남시 판교역로 152, 13층 알파돔타워</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

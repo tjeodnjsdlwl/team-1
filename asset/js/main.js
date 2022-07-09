@@ -1,4 +1,3 @@
-
 $(function(){
     $('header .gnb-item').hover(function(){
         $('header').addClass('over');

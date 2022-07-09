@@ -48,7 +48,7 @@ $(function(){
     tl = gsap.timeline({})
 
     .addLabel('label')
-    .from ('.left-blind',{xPercent: -50,duration: 1.2},'kakaotaxilabel')
+    .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
     .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
 
     .from ('.sc-informain .ic-float',{scale: 0, opacity:0, duration: 0.8,})

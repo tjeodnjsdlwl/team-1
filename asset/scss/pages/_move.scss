@@ -8,7 +8,7 @@
     .intro-title-area{
         max-width:1920px;
         margin: 0 auto;
-        text-align: center;
+        // text-align: center;
         padding: 100px 0 200px 0;
         .sc-title{
             word-break: keep-all;
@@ -385,7 +385,7 @@
 //safety 서브페이지
 
 //sc-app
-.sc-app{
+.sc-safeapp{
     padding-bottom: 200px;
     .sc-title{
         text-align: center;
@@ -1076,17 +1076,3 @@
 
 
 
-@media screen and (max-width: 1408px) {
-    /* 1023까지잡혀야함 */
-
-}
-@media screen and (max-width: 1023px) {
-  /* 767까지잡혀야함 */
-  /* 테블릿 */
-
-}
-@media screen and (max-width: 767px) { 
-  /* 320까지잡혀야함 */
-  /* 모바일 ~ 더나와도됨 480 등등 필요하면 더 가능 */
-
-}

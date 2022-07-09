@@ -105,25 +105,30 @@
     
 }
 // common
+<<<<<<< HEAD
+// section {
+//     text-align: center;
+=======
 section {
     &.center {
         text-align: center;
     }
+>>>>>>> 15acd1fd006b22489b38ba32e6c205e712395c4a
 
-    .row {
-        display: table-row;
-    }
-    .s-title {
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 46px;
-    }
-    .desc {
-        font-size: 22px;
-        font-weight: 800;
-        line-height: 34px;
-    }
-}
+//     .row {
+//         display: table-row;
+//     }
+//     .s-title {
+//         font-size: 30px;
+//         font-weight: 800;
+//         line-height: 46px;
+//     }
+//     .desc {
+//         font-size: 22px;
+//         font-weight: 800;
+//         line-height: 34px;
+//     }
+// }
 
 // @keyframes txtrise {
 //     from {

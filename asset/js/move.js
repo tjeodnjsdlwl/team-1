@@ -83,9 +83,9 @@ $(function(){
 
 
     // 텍스트 아래서 위로
-    textUp = gsap.utils.toArray('.motion');
-    textUp.forEach((textUp) => {
-        gsap.from(textUp, 1.2, {
+    textTop = gsap.utils.toArray('.motion');
+    textTop.forEach((textTop) => {
+        gsap.from(textTop, 1.2, {
             y: 40,
             opacity: 0,
             scrollTrigger: {

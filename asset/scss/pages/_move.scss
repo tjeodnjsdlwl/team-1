@@ -1,5 +1,8 @@
 .container{
-    padding-top: 100px;
+    // padding-top: 100px;
+    .sub &{
+        padding-top: 100px;
+    }
 }
 
 //sc-intro
@@ -8,7 +11,7 @@
     .intro-title-area{
         max-width:1920px;
         margin: 0 auto;
-        // text-align: center;
+        text-align: center;
         padding: 100px 0 200px 0;
         .sc-title{
             word-break: keep-all;
@@ -79,8 +82,8 @@
         }
     }
 
-    .contents-list{
-    }
+    // .contents-list{
+    // }
     .contents-item{
         // display: table;
         // table-layout: fixed;
@@ -513,9 +516,9 @@
 }
 
 //sc-insurance
-.insurance{
-    // padding-bottom: 200px;
-}
+// .insurance{
+//     // padding-bottom: 200px;
+// }
 
 
 

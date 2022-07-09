@@ -20,30 +20,16 @@ $(function () {
         opacity: 0,
     delay: 1.9
     })
-            
-            
-            
-    
-    
-
-    
-
-    
-
-
 
     var currentScroll = $(document).scrollTop();
     currentScroll == 0 ? $('.header-main').addClass('transform') : $('.header-main').removeClass('transform');
 
-    
-        
     $(window).scroll(function () {
         var currentScroll = $(window).scrollTop();
         currentScroll == 0 ? $('.header-main').addClass('transform') : $('.header-main').removeClass('transform');
         // 메인페이지 헤더 클래스 스크롤에 의한 추가/제거
 
     })
-
 
     gsap.fromTo($('.title-area em'), .8, {
         opacity: 0,

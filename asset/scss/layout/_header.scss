@@ -1,5 +1,52 @@
 
 header {
+    width: 100%;
+    height: 101px;
+    background-color: #fff;
+    z-index: 11;
+    &.header-main {
+        position: fixed;
+        overflow: hidden;
+        transition: height 0.4s, background-color .4s; 
+        .covid {
+            margin-top: 16px;
+        }
+        .gnb-menu .subMenu-list {
+            transition: .4s;
+        }
+        &.over {
+            height: 394px;
+            z-index: 1001;
+        }
+    }
+    &.header-area {
+        position: absolute;
+        .header-bg {
+            transition: height 0.5s; 
+            height: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+        .gnb-menu .subMenu-list {
+            transition: .1s;
+            transition-delay: .1s;
+            pointer-events: none;
+        }
+        
+        &:hover {
+            .gnb-menu {
+                color: #000;
+            }
+        }
+        
+        &.over {
+        
+            .header-bg {
+                height: 294px;
+            }
+            .gnb-menu .subMenu-list {pointer-events: all;}
+        }
+    }
     position: absolute;
     width: 100%;
     height: 101px;
@@ -42,6 +89,7 @@ header {
         font-size: 0;
         color: #666;
         text-align: center;
+        transition: color .2s;
 
         .gnb-item {
             display: inline-block;
@@ -100,6 +148,14 @@ header {
         border-color: rgb(229, 229, 229);
         border-bottom-width: 1px;
         border-bottom-style: solid;
+        transition: border-color .2s ease, opacity .2s ease;
+        opacity: 1;
+    }
+    &.header-main:hover {
+        background-color: #fff;
+        .logo {
+            filter: none;
+        }
         transition: border-color .2s ease;
     }
     &:hover {
@@ -117,14 +173,26 @@ header {
         .gnb-menu {
 
             .subMenu-list {
+                opacity: 1;
+            }
+        }
+    }
+    &.transform {
+        background-color: transparent;
+        .logo {
+            filter: invert(100%);
+        }
+        .gnb-menu {
+            color: #fff;
+        }
+        &::after {
+            opacity: 0;
+        }
                 // transition-delay: .25s;
                 opacity: 1;
                 pointer-events: all;
             }
         }
-        
-    }
-}
 .header-area {
     &.fixed {
         position: fixed;

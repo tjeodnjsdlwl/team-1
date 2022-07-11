@@ -5,6 +5,7 @@ $(function(){
         delay: 1
     })
 
+    var currentScroll = $(document).scrollTop();
     var btnKakaoT = $('.btn-kakaoT').offset().top;
     $(window).scroll(function () {
 

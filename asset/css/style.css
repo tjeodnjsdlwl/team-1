@@ -1,4 +1,25 @@
 @charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body,
 input,
 textarea,
@@ -609,13 +630,13 @@ section.center .link-site::after {
 .visual-area .day-distance {
   color: #fff;
   text-align: right;
+  font-weight: 800;
 }
 .visual-area .day-distance strong {
   display: block;
   height: 34px;
   font-size: 22px;
   line-height: 34px;
-  font-weight: 800;
 }
 .visual-area .day-distance em {
   display: inline-block;
@@ -623,7 +644,6 @@ section.center .link-site::after {
   margin-bottom: 15px;
   font-size: 30px;
   line-height: 46px;
-  font-weight: 800;
   vertical-align: bottom;
 }
 .visual-area .day-distance em span {
@@ -738,16 +758,17 @@ section.center .link-site::after {
 }
 .sc-service .text-wrap em {
   display: block;
+  font-size: 100%;
   line-height: 46px;
   color: rgb(255, 205, 0);
 }
 
-.sc-recruit {
+.sc-mainRecruit {
   position: relative;
   height: 700px;
   overflow: hidden;
 }
-.sc-recruit video {
+.sc-mainRecruit video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -757,18 +778,18 @@ section.center .link-site::after {
   min-height: 56.2701vw;
   transform: translate(-50%, -50%);
 }
-.sc-recruit .text-wrap {
+.sc-mainRecruit .text-wrap {
   position: absolute;
   top: 120px;
   padding: 0 6px;
-}
-.sc-recruit .text-wrap h2 {
   font-size: 30px;
   font-weight: 800;
+}
+.sc-mainRecruit .text-wrap h2 {
   line-height: 46px;
   color: #fff;
 }
-.sc-recruit .text-wrap p {
+.sc-mainRecruit .text-wrap p {
   padding-top: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -1312,14 +1333,14 @@ section.center .link-site::after {
   border: 1px solid rgb(255, 205, 0);
 }
 
-.sc-guide {
+.sc-kakaoTguide {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 100px 0;
   color: #fff;
 }
-.sc-guide .bg-guide {
+.sc-kakaoTguide .bg-guide {
   width: 100%;
   height: 632px;
   background-image: url(../images/sc_guide.jpg);
@@ -1327,21 +1348,21 @@ section.center .link-site::after {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.sc-guide .text-box {
+.sc-kakaoTguide .text-box {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   padding-top: 220px;
 }
-.sc-guide .text-box h2 {
+.sc-kakaoTguide .text-box h2 {
   display: block;
   padding: 0 6px;
   font-size: 30px;
   font-weight: 800;
   line-height: 46px;
 }
-.sc-guide .text-box p {
+.sc-kakaoTguide .text-box p {
   padding: 24px 6px 0 6px;
   font-size: 16px;
   font-weight: 400;
@@ -1350,7 +1371,7 @@ section.center .link-site::after {
   overflow-wrap: break-word;
   white-space: pre-line;
 }
-.sc-guide .text-box a {
+.sc-kakaoTguide .text-box a {
   margin: 0 6px;
 }
 

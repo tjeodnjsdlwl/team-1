@@ -3,8 +3,8 @@ $(function(){
     tl = gsap.timeline({})
 
     .addLabel('label')
-    .from ('.left-blind',{xPercent: -50,duration: 1.2},'label')
-    .from ('.right-blind',{xPercent: 50,duration: 1.2},'label')
+    .from ('.left-blind',{xPercent: -50,duration: 1.2,delay:.8},'label')
+    .from ('.right-blind',{xPercent: 50,duration: 1.2,delay:.8},'label')
     .from ('.sc-informain .txt-box2',{y: 60, duration: 1.2, opacity:0,})
 
     .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 0.8,},"-=1")

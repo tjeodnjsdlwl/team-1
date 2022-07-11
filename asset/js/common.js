@@ -5,6 +5,10 @@ $(function(){
         delay: 1
     })
     
+    $('header .gnb-item > a').click(function(e) {
+        e.preventDefault();
+    })
+
     $('header .gnb-item').hover(function () {
         $('header').addClass('over');
     }, function () {

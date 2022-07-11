@@ -1,9 +1,4 @@
 $(function(){
-    
-    gsap.to($('.loading-sub'), .8, {
-        opacity: 0,
-        delay: 1
-    })
 
     var currentScroll = $(document).scrollTop();
     var btnKakaoT = $('.btn-kakaoT').offset().top;

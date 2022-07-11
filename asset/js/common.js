@@ -1,5 +1,10 @@
 $(function(){
     
+    gsap.to($('.loading-sub'), .8, {
+        opacity: 0,
+        delay: 1
+    })
+    
     $('header .gnb-item').hover(function () {
         $('header').addClass('over');
     }, function () {

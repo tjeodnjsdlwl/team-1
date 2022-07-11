@@ -10,7 +10,7 @@ $(function(){
     .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 0.8,},"-=1")
 
     .addLabel('m1')
-    .from ('.sc-informain .title-wrap .txt-box',{y: 60,duration: 0.8, opacity:0,},'m1')
+    .from ('.sc-informain .title-wrap .txt-box-service',{y: 60,duration: 0.8, opacity:0,},'m1')
     .to ('.sc-informain .img-box',{y: 30,duration: 0.8},'m1');
 
 

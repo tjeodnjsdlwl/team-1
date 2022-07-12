@@ -1,10 +1,8 @@
 $(function () {
 
-        
-    // 메인페이지 헤더 클래스 스크롤에 의한 추가/제거
-
     loadingTl = gsap.timeline()
     .addLabel("loadingStart")
+
     loadingTl.to($('.loading-main .line'), .7,{
         xPercent: 100,
     }, 'loadingStart')
@@ -28,7 +26,8 @@ $(function () {
 
 
     /////////////// ↓ 초기 메인로딩이미지 ////////////////// 
-    // 변경점 : 타임라인 1개로 통합, 라벨 활용
+
+    // 변경점 : 타임라인 1개로 통합, 라벨 2개 활용
     
     // lineTl = gsap.timeline();
     // lineTl.to($('.loading-main .line'),{

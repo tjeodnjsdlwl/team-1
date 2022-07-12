@@ -1,6 +1,4 @@
 $(function(){
-
-
     //카카오모빌리티 이야기 년도 더보기버튼
     $('.sc-kakaoload .btn-more').click(function(){
         $('.sc-kakaoload').toggleClass('active');

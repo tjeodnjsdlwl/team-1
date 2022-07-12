@@ -29,7 +29,7 @@ $(function(){
     }) 
 
 
-    //텍스트 옆으로 나오게
+    // 텍스트 옆으로 나오게
     textSide = gsap.utils.toArray('.sidemove');
     textSide.forEach((textSide) => {
         gsap.from(textSide, 1.2,{

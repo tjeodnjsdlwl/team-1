@@ -1,5 +1,5 @@
 $(function(){
-
+    
     if ($('.sc-informain').find('.img-box').length) {
         
         tl = gsap.timeline()
@@ -45,10 +45,10 @@ $(function(){
         $('header').removeClass('over');
     });
 
-    var location = $('.graph').offset();
-    // console.log(location);
-   
-    $('html, body').animate({scrollTop : location.top}, 0 );
+    
+
+    
+    
 
     $(window).scroll(function () {
         var curr = $(this).scrollTop();
@@ -82,4 +82,9 @@ $(function(){
             }
         })
     }) // 이미지,비디오 옆으로 슬라이드
+
+    if($('section').hasClass('graph')){
+        var location = $('.graph').offset();
+        $('html, body').animate({scrollTop : location.top}, 0 );
+    }
 })

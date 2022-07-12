@@ -1,25 +1,53 @@
 $(function () {
 
-    lineTl = gsap.timeline();
-    lineTl.to($('.loading-main .line'),{
+    loadingTl = gsap.timeline()
+    .addLabel("loadingStart")
+    loadingTl.to($('.loading-main .line'), .7,{
         xPercent: 100,
-    }, '+=1')
+    }, 'loadingStart')
+    .to($('.loading-main .image'), .7, {
+        opacity: 1,
+    }, 'loadingStart+=.3')
+
+    .addLabel("loadingEnd", '+=.2')
     .to($('.loading-main .line'), .8, {
         xPercent: 200,
-    },'+=.5')
-    imgTl = gsap.timeline();
-    imgTl.to($('.loading-main .image'), .6, {
-        opacity: 1,
-    }, '+=1')
+    }, 'loadingEnd')
     .to($('.loading-main .image'), .8, {
         scale: 1.1,
         opacity: 0
-    }, '+=.4')
-
-    gsap.to($('.loading-main'), .8, {
+    },'loadingEnd')
+    .to($('.loading-main'), .8, {
         opacity: 0,
-    delay: 1.9
-    })
+    },'loadingEnd') 
+    // 메인로딩이미지
+
+
+
+    // ↓ 초기 메인로딩이미지
+    
+    // lineTl = gsap.timeline();
+    // lineTl.to($('.loading-main .line'),{
+    //     xPercent: 100,
+    // }, '+=1')
+    // .to($('.loading-main .line'), .8, {
+    //     xPercent: 200,
+    // },'+=.5')
+    // imgTl = gsap.timeline();
+    // imgTl.to($('.loading-main .image'), .6, {
+    //     opacity: 1,
+    // }, '+=1')
+    // .to($('.loading-main .image'), .8, {
+    //     scale: 1.1,
+    //     opacity: 0
+    // }, '+=.4')
+
+    // gsap.to($('.loading-main'), .8, {
+    //     opacity: 0,
+    // delay: 1.9
+    // })
+
+    // 변경점 : 타임라인 1개로 통합, 라벨 활용
     
     var currentScroll = $(document).scrollTop();
     currentScroll == 0 ? $('.header-main').addClass('transform') : $('.header-main').removeClass('transform');

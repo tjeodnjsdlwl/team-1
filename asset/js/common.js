@@ -45,6 +45,11 @@ $(function(){
         $('header').removeClass('over');
     });
 
+    var location = $('.graph').offset();
+    // console.log(location);
+   
+    $('html, body').animate({scrollTop : location.top}, 0 );
+
     $(window).scroll(function () {
         var curr = $(this).scrollTop();
         if (curr >= 100) {

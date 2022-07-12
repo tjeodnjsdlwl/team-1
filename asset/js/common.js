@@ -1,5 +1,5 @@
 $(function(){
-
+    
     if ($('.sc-informain').find('.img-box').length) {
         
         tl = gsap.timeline()
@@ -45,6 +45,11 @@ $(function(){
         $('header').removeClass('over');
     });
 
+    
+
+    
+    
+
     $(window).scroll(function () {
         var curr = $(this).scrollTop();
         if (curr >= 100) {
@@ -77,4 +82,9 @@ $(function(){
             }
         })
     }) // 이미지,비디오 옆으로 슬라이드
+
+    if($('section').hasClass('graph')){
+        var location = $('.graph').offset();
+        $('html, body').animate({scrollTop : location.top}, 0 );
+    }
 })

@@ -21,8 +21,8 @@ $(function(){
     $("header .gnb-item:nth-last-child(2) .subMenu-item:last-child a").focusout(function () {
         $('header').removeClass('over');
     });
-    
-    var location = $('.sc-report').offset();
+
+    var location = $('.graph').offset();
     // console.log(location);
    
     $('html, body').animate({scrollTop : location.top}, 0 );

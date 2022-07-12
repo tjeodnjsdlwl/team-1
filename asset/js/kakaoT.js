@@ -1,38 +1,27 @@
 $(function(){
 
-    var currentScroll = $(document).scrollTop();
     var btnKakaoT = $('.btn-kakaoT').offset().top;
+    var headerH = $('.header-area').outerHeight();
     $(window).scroll(function () {
-
-        var headerH = $('.header-area').outerHeight();
+        var currentScroll = $(document).scrollTop();
 
         currentScroll >= btnKakaoT - headerH ? $('.btn-kakaoT, .sc-kakaoT').addClass('fixed') : $('.btn-kakaoT, .sc-kakaoT').removeClass('fixed')
-    })
+    }) // 카카오T 탭 메뉴 고정
 
-    tl = gsap.timeline({})
+    
 
-    .addLabel('label')
-    .from ('.left-blind',{xPercent: -50,duration: 1.2,delay:.8},'label')
-    .from ('.right-blind',{xPercent: 50,duration: 1.2,delay:.8},'label')
-    .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 0.8,})
-
-    .addLabel('m1')
-    .from ('.sc-informain .title-wrap .txt-box-service',{y: 60,duration: 0.8, opacity:0,},'m1')
-    .to ('.sc-informain .img-box',{y: 30,duration: 0.8},'m1')
-    // kakaoT 비쥬얼영역 gsap
-
-    gsapUp = gsap.utils.toArray('.gsap-up');
-    gsapUp.forEach((gsapUp) => {
-        gsap.from(gsapUp, 1.3, {
+    imgUp = gsap.utils.toArray('.imgUp');
+    imgUp.forEach((imgUp) => {
+        gsap.from(imgUp, 1.3, {
             y: 80,
             ease: Power1.easeInOut,
             opacity: 0,
             scrollTrigger: {
-                trigger: gsapUp,
+                trigger: imgUp,
                 start: 'top bottom',
             }
-        }) // kakaoT 이미지 up gsap
-    })
+        })
+    }) // 서비스 imgUp
 
     rightLeft = gsap.utils.toArray('.rightLeft');
     rightLeft.forEach((rightLeft) => {
@@ -63,7 +52,6 @@ $(function(){
             scrollTrigger: {
                 trigger: textUpVer2,
                 start: 'top bottom',
-                // markers: true
             }
         })
     }) // text up gsap
@@ -77,7 +65,7 @@ $(function(){
                 start: 'top bottom',
             }
         })
-    })
+    }) // opacity
 
     leftRight = gsap.utils.toArray('.leftRight');
     leftRight.forEach((leftRight) => {
@@ -89,13 +77,11 @@ $(function(){
                 start: 'top bottom',
             }
         })
-    }) // 텍스트 왼쪽ㄷ에서 왼쪽으로
+    }) // 텍스트 왼쪽에서 오른쪽으로
 
-    $('.btn-kakaoT button').click(function () {
+    $('.btn-kakaoT button').click(function () { // 이 안에 있는 gsap들은 탭 버튼을 누를 때 마다 작동
 
         $(this).addClass('active').siblings().removeClass('active')
-
-        
 
         var activeTab = $(this).data('tab');
 
@@ -105,31 +91,16 @@ $(function(){
                 gsap.set(cover, {
                     xPercent: 0
                 })
-            })
-            rightLeft = gsap.utils.toArray('.rightLeft');
-            rightLeft.forEach((rightLeft) => {
-                gsap.set(rightLeft, {
-                    x: 10,
-                    opacity: 0,
-                })
-            }) // 텍스트 오른쪽에서 왼쪽으로
-            rightLeft = gsap.utils.toArray('.rightLeft');
-                rightLeft.forEach((rightLeft) => {
-                    gsap.to(rightLeft, 1.2, {
-                        x: 0,
-                        opacity: 1,
-                        scrollTrigger: {
-                            trigger: rightLeft,
-                            start: 'top bottom',
-                        }
-                    })
-                }) // 텍스트 오른쪽에서 왼쪽으로
+            }) // cover
+
 
             if ($(this).data('content') == activeTab) {
                 $(this).addClass('active')
                 const mainImg = $(this).find('.mainImg-area img');
-                var scTop = mainImg.offset().top
-                $(window).scrollTop(scTop - 142);
+                var scTop = $(this).offset().top
+                var kakaoTH = $('.btn-kakaoT').outerHeight();
+                console.log(scTop - (kakaoTH + headerH));
+                $(window).scrollTop(scTop - (kakaoTH + headerH));
                 gsap.from(mainImg, 1.3, {
                     y: 80,
                     ease: Power1.easeInOut,
@@ -161,13 +132,33 @@ $(function(){
                             start: 'top bottom'
                         }
                     })
-                })
+                }) // cover
 
             } else {
                 $(this).removeClass('active')
             }
 
         })
+
+        rightLeft = gsap.utils.toArray('.rightLeft');
+            rightLeft.forEach((rightLeft) => {
+                gsap.set(rightLeft, {
+                    x: 10,
+                    opacity: 0,
+                })
+            })
+
+            rightLeft = gsap.utils.toArray('.rightLeft');
+            rightLeft.forEach((rightLeft) => {
+                gsap.to(rightLeft, 1.2, {
+                    x: 0,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: rightLeft,
+                        start: 'top bottom',
+                    }
+                })
+            }) // 텍스트 오른쪽에서 왼쪽으로
 
         textUpVer2_click = $('.textUpClick');
         gsap.set(textUpVer2_click, {
@@ -182,7 +173,7 @@ $(function(){
                 start: 'top bottom',
             }
 
-        })
+        }) // text up
 
     });
      
@@ -264,7 +255,7 @@ $(function(){
     var swiper = new Swiper(".proxyDetail", {
         spaceBetween: 30,
         effect: "fade",
-        simulateTouch:false,
+        simulateTouch:false, // 터치불가, 그랩 슬라이드 끄기 위해 사용
         speed: 400,
         pagination: {
             el: ".swiper-pagination",
@@ -280,10 +271,10 @@ $(function(){
                 
                 gsap.to($('.dimmed'), .3,{
                     opacity: .3,
-                    yoyo: true,
+                    yoyo: true, // 리버스로 반복, 무슨 말인지 모르면 물어볼 것!
                     repeat: 1,
                     ease: Power1.easeOut
-                })
+                }) // 화이트현상
                 var current = $('.proxy-type').eq(this.realIndex)
                 gsap.to(current.children('p'), .6, {
                     xPercent: 20.6,
@@ -294,3 +285,5 @@ $(function(){
         }
     });
 })
+
+//////////////////////////////////////////////////////////// 모든 설명 주석은 추후에 모두 다 제거할 예정

@@ -28,14 +28,6 @@ $(function(){
 
     });
 
-    //공통 메인 가림막
-    mainTl = gsap.timeline({})
-
-    .addLabel('label')
-    .from ('.left-blind',{xPercent: -50,duration: 1.2,delay:.8},'label')
-    .from ('.right-blind',{xPercent: 50,duration: 1.2,delay:.8},'label')
-    .from ('.txt-box',{y: 20,duration: 0.8,opacity:0})
-
     
     // textTl = gsap.timeline({
     //     scrollTrigger: {

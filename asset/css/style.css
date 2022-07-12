@@ -208,6 +208,75 @@ body {
   background-color: #fff;
 }
 
+.sc-informain {
+  overflow: hidden;
+}
+.sc-informain .visual-box {
+  position: relative;
+  margin-top: 100px;
+}
+.sc-informain .left-blind {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  top: -100px;
+  left: -282px;
+  width: 50%;
+  bottom: 0;
+}
+.sc-informain .right-blind {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  top: -100px;
+  right: -282px;
+  width: 50%;
+  bottom: 0;
+}
+.sc-informain .video-box {
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -100px;
+}
+.sc-informain .video-box video {
+  height: 100%;
+}
+.sc-informain .title-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -51px;
+}
+.sc-informain .title-wrap .img-box img {
+  width: 129px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-informain .txt-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -40px;
+}
+.sc-informain .cata {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+.sc-informain .m-title {
+  padding-top: 12px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 110px;
+  color: rgb(255, 205, 0);
+  white-space: pre-wrap;
+}
+
 .btn-more {
   display: inline-block;
   box-sizing: border-box;
@@ -797,67 +866,6 @@ section.center .link-site::after {
   color: #fff;
 }
 
-.sc-informain {
-  overflow: hidden;
-}
-.sc-informain .visual-box {
-  position: relative;
-  margin-top: 100px;
-}
-.sc-informain .left-blind {
-  position: absolute;
-  background: rgb(255, 255, 255);
-  top: -100px;
-  left: -282px;
-  width: 50%;
-  bottom: 0;
-}
-.sc-informain .right-blind {
-  position: absolute;
-  background: rgb(255, 255, 255);
-  top: -100px;
-  right: -282px;
-  width: 50%;
-  bottom: 0;
-}
-.sc-informain .video-box {
-  min-height: 100vh;
-  height: 100vh;
-  overflow: hidden;
-  margin-top: -100px;
-}
-.sc-informain .video-box video {
-  height: 100%;
-}
-.sc-informain .title-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin-top: -76px;
-}
-.sc-informain .title-wrap .img-box img {
-  width: 129px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.sc-informain .txt-box .cata {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 34px;
-  color: rgb(255, 255, 255);
-  display: block;
-}
-.sc-informain .txt-box .m-title {
-  padding-top: 12px;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 110px;
-  color: rgb(255, 205, 0);
-  white-space: pre-wrap;
-}
-
 .btn-kakaoT {
   position: relative;
   display: flex;
@@ -867,7 +875,6 @@ section.center .link-site::after {
   border-top: 1px solid rgb(173, 173, 173);
   background-color: #fff;
   overflow-x: auto;
-  overflow-x: overlay;
 }
 .btn-kakaoT button {
   position: relative;
@@ -1069,7 +1076,7 @@ section.center .link-site::after {
   display: block;
 }
 .sc-kakaoT.fixed {
-  margin-top: 313px;
+  margin-top: 288px;
 }
 
 .animate-taxi {
@@ -1492,62 +1499,6 @@ section.center .link-site::after {
 .sc-partner .partner-list a:hover {
   border: 1px solid rgb(255, 205, 0);
   color: rgb(255, 205, 0);
-}
-
-.sc-informain {
-  overflow: hidden;
-}
-.sc-informain .visual-box {
-  position: relative;
-  margin-top: 100px;
-}
-.sc-informain .left-blind {
-  position: absolute;
-  background: rgb(255, 255, 255);
-  top: -100px;
-  left: -282px;
-  width: 50%;
-  bottom: 0;
-}
-.sc-informain .right-blind {
-  position: absolute;
-  background: rgb(255, 255, 255);
-  top: -100px;
-  right: -282px;
-  width: 50%;
-  bottom: 0;
-}
-.sc-informain .video-box {
-  min-height: 100vh;
-  height: 100vh;
-  overflow: hidden;
-  margin-top: -100px;
-}
-.sc-informain .video-box video {
-  height: 100%;
-}
-.sc-informain .txt-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin-top: -40px;
-}
-.sc-informain .txt-box .cata {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 34px;
-  color: rgb(255, 255, 255);
-  display: block;
-}
-.sc-informain .txt-box .m-title {
-  padding-top: 12px;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 110px;
-  color: rgb(255, 205, 0);
-  white-space: pre-wrap;
 }
 
 .sc-suppinfor {
@@ -2009,92 +1960,6 @@ iframe {
 }
 .sc-culture .row .s-title {
   padding: 0 150px;
-}
-
-.sub .container {
-  padding-top: 100px;
-}
-
-.sc-informain {
-  overflow: hidden;
-}
-.sc-informain .visual-box {
-  position: relative;
-  margin-top: 100px;
-}
-.sc-informain .left-blind {
-  position: absolute;
-  background: rgb(255, 255, 255);
-  top: -100px;
-  left: -282px;
-  width: 50%;
-  bottom: 0;
-}
-.sc-informain .right-blind {
-  position: absolute;
-  background: rgb(255, 255, 255);
-  top: -100px;
-  right: -282px;
-  width: 50%;
-  bottom: 0;
-}
-.sc-informain .video-box {
-  min-height: 100vh;
-  height: 100vh;
-  overflow: hidden;
-  margin-top: -100px;
-}
-.sc-informain .video-box video {
-  height: 100%;
-}
-.sc-informain .title-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin-top: -76px;
-}
-.sc-informain .title-wrap .img-box img {
-  width: 129px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.sc-informain .txt-box2 {
-  opacity: 1;
-}
-.sc-informain .txt-box2 .cata {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 34px;
-  color: rgb(255, 255, 255);
-  display: block;
-}
-.sc-informain .txt-box2 .m-title {
-  padding-top: 12px;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 110px;
-  color: rgb(255, 205, 0);
-  white-space: pre-wrap;
-}
-.sc-informain .txt-box-service {
-  opacity: 1;
-}
-.sc-informain .txt-box-service .cata {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 34px;
-  color: rgb(255, 255, 255);
-  display: block;
-}
-.sc-informain .txt-box-service .m-title {
-  padding-top: 12px;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 110px;
-  color: rgb(255, 205, 0);
-  white-space: pre-wrap;
 }
 
 .sc-intro .intro-title-area {

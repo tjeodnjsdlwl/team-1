@@ -1,4 +1,27 @@
 $(function(){
+
+    if ($('.sc-informain').find('.img-box').length) {
+        
+        tl = gsap.timeline()
+
+        .addLabel('label')
+        .from ('.left-blind',{xPercent: -50,duration: 1.2,delay:.8},'label')
+        .from ('.right-blind',{xPercent: 50,duration: 1.2,delay:.8},'label')
+        .from ('.sc-informain .img-box',{scale: 0, opacity:0, duration: 0.8,})
+
+        .addLabel('m1')
+        .from ('.sc-informain .title-wrap .txt-box-service',{y: 60,duration: 0.8, opacity:0,},'m1')
+        .to ('.sc-informain .img-box',{y: 30,duration: 0.8},'m1')
+    } else {
+        
+        tl = gsap.timeline()
+
+        .addLabel('label')
+        .from ('.left-blind',{xPercent: -50,duration: 1.2,delay:.8},'label')
+        .from ('.right-blind',{xPercent: 50,duration: 1.2,delay:.8},'label')
+        .from ('.txt-box',{y: 20,duration: 0.8,opacity:0})
+    }
+
     
     gsap.to($('.loading-sub'), .8, {
         opacity: 0,

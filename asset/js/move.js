@@ -5,7 +5,7 @@ $(function(){
     textTop = gsap.utils.toArray('.motion');
     textTop.forEach((textTop) => {
         gsap.from(textTop, 1.2, {
-            y: 40,
+            y: 60,
             opacity: 0,
             scrollTrigger: {
                 trigger: textTop,
@@ -15,7 +15,7 @@ $(function(){
     }) 
 
 
-    //텍스트 옆으로 나오게
+    // 텍스트 옆으로 나오게
     textSide = gsap.utils.toArray('.sidemove');
     textSide.forEach((textSide) => {
         gsap.from(textSide, 1.2,{
@@ -54,33 +54,6 @@ $(function(){
         }
     })
 
-    // $('.motion').each(function(index,item){
-    
-        // yVal = $(this).data('y');
-        // console.log();
-    
-        // gsap.from('.motion',{
-        //     scrollTrigger:{
-        //         trigger:'.motion',
-        //         start:"0% 100%", // ['트리거','윈도으']
-        //         // end:"100% top", // ['트리거','윈도으']
-        //         end:"top bottom",
-        //         markers:true,
-        //         // scrub:1,//왔다 갔다 할때 반복도 됨 내 스크롤에 따라서 0은 내 스크롤 기준 보통은 1 높을수록 좀만 스크롤이 닿아도 많이 실행됨
-        //         // pin:true,
-        //     },
-        //     yPercent:20,
-        //     duration:1,
-        //     // opacity:0,
-        // })
-    // });
-
-
-
-
-
-
-
 
 
 
@@ -113,6 +86,47 @@ $(function(){
 
         let idx = $(this).index();
         $('.intro-area .intro-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+        
+
+
+        textTop = gsap.utils.toArray('.motion');
+        textTop.forEach((textTop) => {
+            gsap.from(textTop, 1.2, {
+                y: 60,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: textTop,
+                    start: 'top bottom',
+                }
+            })
+        }) 
+
+        cover = gsap.utils.toArray('.cover');
+        cover.forEach((cover) => {
+            gsap.from(cover, 1.2, {
+                xPercent: 0,
+                ease: Power1.easeInOut,
+                scrollTrigger: {
+                    trigger: cover,
+                    start: 'top bottom',
+                }
+            })
+        }) // 이미지,비디오 옆으로 슬라이드
+
+
+
+        textSide = gsap.utils.toArray('.sidemove');
+        textSide.forEach((textSide) => {
+            gsap.from(textSide, 1.2,{
+                x: 40,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: textSide,
+                    start: 'top bottom',
+                }
+            })
+        })
+
 
     });
 });//end

@@ -2259,32 +2259,32 @@ iframe {
   margin-left: 24px;
 }
 
-.sc-app {
+.sc-safeapp {
   padding-bottom: 200px;
 }
-.sc-app .sc-title {
+.sc-safeapp .sc-title {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
 }
-.sc-app .app-list {
+.sc-safeapp .app-list {
   display: flex;
   flex-wrap: wrap;
 }
-.sc-app .app-item {
+.sc-safeapp .app-item {
   width: 50%;
   text-align: center;
   padding-top: 100px;
 }
-.sc-app .img-box img {
+.sc-safeapp .img-box img {
   width: 321px;
   display: block;
   max-width: 100%;
   max-height: 100%;
   margin: 0px auto;
 }
-.sc-app .txt-box .title {
+.sc-safeapp .txt-box .title {
   word-break: keep-all;
   overflow-wrap: break-word;
   display: block;
@@ -2294,7 +2294,7 @@ iframe {
   line-height: 46px;
   color: rgb(0, 0, 0);
 }
-.sc-app .txt-box .desc {
+.sc-safeapp .txt-box .desc {
   word-break: keep-all;
   overflow-wrap: break-word;
   margin-top: 24px;
@@ -2795,29 +2795,6 @@ iframe {
   -webkit-animation: fadeInUp 1.3s;
           animation: fadeInUp 1.3s;
   transition: ease-in-out;
-}
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 80px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 80px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-.intro-wrap .navi02 {
-  padding-top: 80px;
 }
 .intro-wrap .sc-kakaoTapp {
   margin-top: 200px;

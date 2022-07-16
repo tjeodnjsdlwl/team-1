@@ -85,7 +85,7 @@ $(function(){
     $(window).scroll(function(){
         scl = $(window).scrollTop();
         // console.log(scl);
-        if ($(this).scrollTop() > 950) {
+        if ($(this).scrollTop() > 960) {
             $('.btn-navibox').addClass('navifixed');
         } else {
             $('.btn-navibox').removeClass('navifixed');

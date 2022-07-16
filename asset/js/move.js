@@ -81,12 +81,30 @@ $(function(){
 
 
     //서브페이지navi
+
+    $(window).scroll(function(){
+        scl = $(window).scrollTop();
+        // console.log(scl);
+        if ($(this).scrollTop() > 950) {
+            $('.btn-navibox').addClass('navifixed');
+        } else {
+            $('.btn-navibox').removeClass('navifixed');
+        }
+    });//end
+
+
+
+
     $('.intro-area .btn').click(function(){
         $(this).addClass('active').siblings().removeClass('active');
 
         let idx = $(this).index();
         $('.intro-area .intro-wrap').eq(idx).addClass('active').siblings().removeClass('active');
-        
+        //탭했을때 섹션화면으로 가게
+        var offset = $('.intro-naviwrap').offset();
+        $('html').animate({scrollTop : offset.top}, 0);
+
+        // $('html').animate({scrollTop : offset.top}, 400);})
 
 
         textTop = gsap.utils.toArray('.motion');

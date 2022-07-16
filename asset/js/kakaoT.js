@@ -87,7 +87,6 @@ $(function(){
 
         var activeTab = $(this).data('tab');
 
-        console.log(scTop);
         $(window).scrollTop(scTop - (kakaoTH + headerH));
         $('.sc-kakaoT').each(function () {
             cover = gsap.utils.toArray($(this).find('.cover'));
@@ -108,7 +107,6 @@ $(function(){
                 })
 
                 textUp = gsap.utils.toArray($(this).find('.textUp'));
-                console.log(textUp);
                 textUp.forEach((textUp) => {
                     gsap.from(textUp, 1.2, {
                         y: 30,
@@ -122,7 +120,6 @@ $(function(){
 
 
                 var cover = gsap.utils.toArray($(this).find('.cover'));
-                console.log(cover);
                 cover.forEach((cover) => {
                     gsap.to(cover, 1.2, {
                         xPercent: 100,
@@ -179,7 +176,6 @@ $(function(){
      
     var activeTaxi = $('.taxi-type.active').children('img');
     var activeText = $('.taxi-type.active').children('p');
-    console.log(activeText);
     var other = $('.taxi-type').not('.active').children('img');
     const otherTaxi = gsap.utils.toArray(other);
 

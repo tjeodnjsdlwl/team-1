@@ -83,10 +83,11 @@ $(function(){
     //서브페이지navi
 
     var offset = $('.intro-naviwrap').offset().top;
-    var headerH = $('.header-area').height();
+    var headerH = $('.header-area').outerHeight();
     $(window).scroll(function(){
         scl = $(window).scrollTop();
-        if ($(this).scrollTop() > offset - headerH) {
+        // console.log(scl);
+        if ($(this).scrollTop() > 950) {
             $('.btn-navibox').addClass('navifixed');
         } else {
             $('.btn-navibox').removeClass('navifixed');

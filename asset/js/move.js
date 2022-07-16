@@ -82,10 +82,11 @@ $(function(){
 
     //서브페이지navi
 
+    var offset = $('.intro-naviwrap').offset().top;
+    var headerH = $('.header-area').height();
     $(window).scroll(function(){
         scl = $(window).scrollTop();
-        // console.log(scl);
-        if ($(this).scrollTop() > 950) {
+        if ($(this).scrollTop() > offset - headerH) {
             $('.btn-navibox').addClass('navifixed');
         } else {
             $('.btn-navibox').removeClass('navifixed');
@@ -101,8 +102,7 @@ $(function(){
         let idx = $(this).index();
         $('.intro-area .intro-wrap').eq(idx).addClass('active').siblings().removeClass('active');
         //탭했을때 섹션화면으로 가게
-        var offset = $('.intro-naviwrap').offset();
-        $('html').animate({scrollTop : offset.top}, 0);
+        $('html').animate({scrollTop : offset - headerH}, 0);
 
         // $('html').animate({scrollTop : offset.top}, 400);})
 

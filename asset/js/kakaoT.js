@@ -79,12 +79,16 @@ $(function(){
         })
     }) // 텍스트 왼쪽에서 오른쪽으로
 
+    var scTop = $('.service-kakaoT').offset().top
+    var kakaoTH = $('.btn-kakaoT').outerHeight();
     $('.btn-kakaoT button').click(function () { // 이 안에 있는 gsap들은 탭 버튼을 누를 때 마다 작동
 
         $(this).addClass('active').siblings().removeClass('active')
 
         var activeTab = $(this).data('tab');
 
+        console.log(scTop);
+        $(window).scrollTop(scTop - (kakaoTH + headerH));
         $('.sc-kakaoT').each(function () {
             cover = gsap.utils.toArray($(this).find('.cover'));
             cover.forEach((cover) => {
@@ -97,10 +101,6 @@ $(function(){
             if ($(this).data('content') == activeTab) {
                 $(this).addClass('active')
                 const mainImg = $(this).find('.mainImg-area img');
-                var scTop = $(this).offset().top
-                var kakaoTH = $('.btn-kakaoT').outerHeight();
-                console.log(scTop - (kakaoTH + headerH));
-                $(window).scrollTop(scTop - (kakaoTH + headerH));
                 gsap.from(mainImg, 1.3, {
                     y: 80,
                     ease: Power1.easeInOut,

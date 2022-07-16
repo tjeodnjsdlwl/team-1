@@ -1,4 +1,13 @@
 
+    //네비게이션 박스 픽스
+    .navifixed{
+        position: fixed;
+        top: 55px;left: 0;right: 0;
+        background: #fff;
+        z-index: 1;
+    }
+
+
 //sc-intro
 .sc-intro{
 
